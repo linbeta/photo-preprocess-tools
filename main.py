@@ -26,15 +26,15 @@ def mkdir(path):
 
 # 用ITEM來存哪個食材資料夾及檔名
 ITEM = "28_sweet-potato"
-''' 設定圖片路徑，該路徑下包含了14張jpg格式的照片，名字依次為0.jpg, 1.jpg, 2.jpg,...,14.jpg'''
+# 設定圖片讀取路徑，該路徑下包含jpg格式的照片
 DATADIR = f"D:\OneDrive\Learning\AI Class_TibaMe02\Team Project\original_files\\" + ITEM
-'''設定目標畫素大小，此處設為416，專案需一致，為32的倍數'''
-IMG_SIZE = 224
-'''使用os.path模組的join方法生成路徑'''
-path = os.path.join(DATADIR)
-
 # 設定存檔路徑
 SAVE_DIR = "D:\OneDrive\Learning\AI Class_TibaMe02\Team Project\\000_resize_224_square\\" + ITEM
+# 設定目標畫素大小，專案需一致，為32的倍數
+IMG_SIZE = 224
+
+# 使用os.path模組的join方法生成路徑
+path = os.path.join(DATADIR)
 
 # 檢查存檔路徑，如果不存在直接創一個
 try:
