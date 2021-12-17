@@ -1,7 +1,7 @@
 # 使用說明
 
 main.py讀取檔名已中心切成正方形後resize
-```buildoutcfg
+```python
 # 用ITEM來存哪個食材資料夾及檔名
 ITEM = "28_sweet-potato"
 DATADIR = f"D:\OneDrive\Learning\AI Class_TibaMe02\Team Project\original_files\\" + ITEM
@@ -13,12 +13,12 @@ IMG_SIZE = 224
 
 
 augmentation.py讀取resize過後的資料夾，設定需要讀幾張照片、做幾次aug
-```buildoutcfg
+```python
 # 用 pic_name 代入食材名稱/指定資料夾
 pic_name = '28_sweet-potato'
 ```
 47-49行
-```buildoutcfg
+```python
 # 設定要做Aug幾次，如果抓50張照片，做9次augmentation就可以得到500張了
 NUM = 84
 AUGLOOP = 5
