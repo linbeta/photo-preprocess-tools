@@ -25,7 +25,7 @@ def mkdir(path):
 
 
 # 用ITEM來存哪個食材資料夾及檔名
-ITEM = "52_cucumber"
+ITEM = "50_Others"
 # 設定圖片讀取路徑，該路徑下包含jpg格式的照片
 DATADIR = f"D:\OneDrive\Learning\AI Class_TibaMe02\Team Project\original_files\\" + ITEM
 # 設定存檔路徑
